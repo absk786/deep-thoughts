@@ -1,8 +1,6 @@
-//import the gql  tagged implemented fxn 
-const {gql} = require('apollo-server-express')
+const typeDefs = require('./typeDefs')
+const resolvers = require('./resolvers')
 
-//create typedefs
-const typeDefs = gql ``;
 
-//export typedegs
-module.exports = typeDefs;
+
+module.exports = {typeDefs, resolvers}
